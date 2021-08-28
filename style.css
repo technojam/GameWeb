@@ -1,42 +1,38 @@
-html, body,
-ul, ol, li,
-h1, h2, h3, h4, h5, h6, p,
-form, input, div {
-  margin: 0;
-  padding: 0;
+body{
+    background-color: #000000;
+    background-image: linear-gradient(400deg, #000000 0%, #414141 74%);
 }
+.heading{
+    font-family: 'Dosis', sans-serif;
+    font-size: 5rem;
+    color: aliceblue;
+    text-align: center;
+}
+.txt{
+    color: white;
+}
+.custom-card{
+    height: 40rem;
+    width: 30rem;
+    margin: 5rem;
+}
+.custom-card:hover{
+    transition: transform .2s;
+    transform: scale(1.1);
+}
+.custom-card:hover .title-txt{
+    color: red;
+}
+.card-link{
+    text-decoration: none;
 
-body {
-  font-family: "Lucida Handwriting";
-  background-color: black ;
 }
-.header{
-  height:100px;
+.custom-img{
+    height: 23rem;
+    width: 20rem;
 }
-
-.header-logo {
-  color: #4CBB17 ;
-  float: left;
-  font-size: 80px ;
-  padding: 20px 30px;
-}
-
-.header-list{
-  float: left;
-  color: #FFD700 ;
-  font-size: 30px ;
-  font-style: normal;
-  padding: 60px 250px ;
-}
-
-.header-list li{
-  display: inline;
-  padding: 20px;
-}
-
-.copy-container{
-  font-family: Papyrus ;
-  color: ORANGE;
-  padding-top: 120px ;
-  padding-left: 20px ;
+.custom-deck{
+    padding-top: 8rem;
+    display: flex;
+    justify-content: center;
 }
