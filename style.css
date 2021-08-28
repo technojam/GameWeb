@@ -4,10 +4,39 @@ body{
 }
 .heading{
     font-family: 'Dosis', sans-serif;
-    font-size: 5rem;
+    font-size: 8rem;
     color: aliceblue;
     text-align: center;
+    padding-top: 3rem;
+    overflow: hidden;
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
 }
+.gradient-text{
+    background: linear-gradient(to right, crimson, white, red);
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip:text;
+    color:rgba(0,0,0,1);
+    font-size:5rem;
+    /* width:80vw; */
+    /* margin:30vh auto; */
+    transition: color .4s ease-in-out;
+    text-transform:uppercase;
+    font-weight:900;
+  }
+  .gradient-text:hover{
+    color:rgba(0,0,0,0);
+  }
+  @keyframes rainbow { 
+    0%{background-position:left}
+    50%{background-position:right}
+    100%{background-position:left}
+  }
 .txt{
     color: white;
 }
@@ -15,6 +44,8 @@ body{
     height: 40rem;
     width: 30rem;
     margin: 5rem;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
 }
 .custom-card:hover{
     transition: transform .2s;
@@ -30,9 +61,11 @@ body{
 .custom-img{
     height: 23rem;
     width: 20rem;
+    justify-content: center;
 }
 .custom-deck{
-    padding-top: 8rem;
+    padding-top: 5rem;
     display: flex;
     justify-content: center;
+    height : 70rem;
 }
