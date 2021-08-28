@@ -1,0 +1,35 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Handwriting";
+  background-color: black ;
+}
+.header{
+  height:100px;
+}
+
+.header-logo {
+  color: #4CBB17 ;
+  float: left;
+  font-size: 80px ;
+  padding: 20px 30px;
+}
+
+.header-list{
+  float: left;
+  color: #FFD700 ;
+  font-size: 30px ;
+  font-style: normal;
+  padding: 60px 250px ;
+}
+
+.header-list li{
+  display: inline;
+  padding: 20px;
+}
