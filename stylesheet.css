@@ -1,0 +1,80 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Handwriting";
+  background-color: black ;
+}
+.header{
+  height:100px;
+}
+
+.header-logo {
+  color: #4CBB17 ;
+  float: left;
+  font-size: 80px ;
+  padding: 20px 50px;
+}
+
+.header-list{
+  float: left;
+  color: #FFD700 ;
+  font-size: 30px ;
+  font-style: normal;
+  padding: 60px 220px ;
+}
+
+.header-list li{
+  display: inline;
+  padding: 20px;
+}
+
+.copy-container{
+  font-family: Papyrus ;
+  color: ORANGE;
+  padding-left: 50px ;
+}
+
+a:link{
+  text-decoration: none;
+  color: #FFD700 ;
+}
+a:hover{
+  text-decoration: none;
+  text-shadow: 2px 2px #FF0000;
+}
+
+.contents-item{
+  padding-left: 50px ;
+  padding-top: 50px;
+  float: left;
+}
+
+.contents{
+  color: #4CBB17;
+  font-style: normal;
+  padding-left: 50px ;
+}
+
+.footer{
+  color: orangered;
+  padding-left: 50px;
+  padding-bottom: 200px ;
+}
+
+.quiz-menu{
+  color: #FFD700 ;
+  padding-left: 50px ;
+  padding-bottom: 300px ;
+  padding-top: 50px ;
+}
+
+p{
+  padding-top: 50px ;
+  padding-bottom: 50px;
+}
