@@ -16,7 +16,7 @@ body{
   background-position: 100%;
 }
 .gradient-text{
-    background: linear-gradient(to right, crimson, white, red);
+    background: linear-gradient(to right, green, white, red);
     background-size: 200% 200%;
     animation: rainbow 2s ease-in-out infinite;
     background-clip: text;

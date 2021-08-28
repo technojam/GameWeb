@@ -19,14 +19,36 @@ body {
   float: left;
   font-size: 80px ;
   padding: 20px 50px;
+  font-family: 'Dosis', sans-serif;
+}
+.cool-link {
+  color: #000;
+  text-decoration: none;
 }
 
+.cool-link::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width .3s;
+}
+.cool-link:hover{
+  border-bottom: solid purple 3px;
+  transition: width .3s;
+}
+.cool-link:hover::after {
+  width: 100%;
+}
 .header-list{
   float: left;
   color: #FFD700 ;
   font-size: 30px ;
   font-style: normal;
   padding: 60px 220px ;
+  font-family: 'Dosis', sans-serif;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .header-list li{
@@ -50,15 +72,16 @@ a:hover{
 }
 
 .contents-item{
-  padding-left: 50px ;
+  margin-left: 25px ;
+  margin-right: 25px;
   padding-top: 50px;
   float: left;
+  transition: 0.3s;
 }
 
 .contents{
   color: #4CBB17;
   font-style: normal;
-  padding-left: 50px ;
 }
 
 .footer{
@@ -74,7 +97,59 @@ a:hover{
   padding-top: 50px ;
 }
 
-p{
+.para{
   padding-top: 50px ;
   padding-bottom: 50px;
+  margin-left: 1rem;
+  font-family: 'Dosis', sans-serif;
+  color: white;
 }
+
+.heading{
+  margin-bottom: 2rem;
+}
+.custom:hover{
+  transition: transform .2s;
+  transform: scale(1.1);
+  box-shadow: 0 200px 200px 0 rgba(113, 245, 141, 0.2);
+}
+.heading{
+    font-family: 'Dosis', sans-serif;
+    font-size: 8rem;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 3rem;
+    overflow: hidden;
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+}
+.gradient-text{
+    background: linear-gradient(to right, crimson, white, red);
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip:text;
+    color:rgba(0,0,0,1);
+    font-size:5rem;
+    transition: color .4s ease-in-out;
+    text-transform:uppercase;
+    font-weight:900;
+  }
+  .gradient-text:hover{
+    color:rgba(0,0,0,0);
+  }
+  @keyframes rainbow { 
+    0%{background-position:left}
+    50%{background-position:right}
+    100%{background-position:left}
+  }
+  .games-section{
+    justify-content: center;
+    display: flex;
+  }
+  .custom:hover .para{
+    color: #4CBB17;
+  }
