@@ -33,3 +33,10 @@ body {
   display: inline;
   padding: 20px;
 }
+
+.copy-container{
+  font-family: Papyrus ;
+  color: ORANGE;
+  padding-top: 120px ;
+  padding-left: 20px ;
+}
