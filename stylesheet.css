@@ -19,8 +19,8 @@ body {
   float: left;
   font-size: 80px ;
   padding: 20px 50px;
-  font-family: 'Dosis', sans-serif;
 }
+
 .cool-link {
   color: #000;
   text-decoration: none;
@@ -40,15 +40,13 @@ body {
 .cool-link:hover::after {
   width: 100%;
 }
+
 .header-list{
   float: left;
   color: #FFD700 ;
   font-size: 30px ;
   font-style: normal;
   padding: 60px 220px ;
-  font-family: 'Dosis', sans-serif;
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .header-list li{
@@ -72,8 +70,7 @@ a:hover{
 }
 
 .contents-item{
-  margin-left: 25px ;
-  margin-right: 25px;
+  padding-left: 50px ;
   padding-top: 50px;
   float: left;
   transition: 0.3s;
@@ -82,6 +79,7 @@ a:hover{
 .contents{
   color: #4CBB17;
   font-style: normal;
+  padding-left: 50px ;
 }
 
 .footer{
@@ -128,7 +126,7 @@ a:hover{
 }
 .gradient-text{
     background: linear-gradient(to right, crimson, white, red);
-    background-size: 200% 200%;
+    background-size: 150% 150%;
     animation: rainbow 2s ease-in-out infinite;
     background-clip: text;
     -webkit-background-clip:text;
@@ -141,7 +139,7 @@ a:hover{
   .gradient-text:hover{
     color:rgba(0,0,0,0);
   }
-  @keyframes rainbow { 
+  @keyframes rainbow {
     0%{background-position:left}
     50%{background-position:right}
     100%{background-position:left}
